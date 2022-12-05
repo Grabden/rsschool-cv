@@ -3,9 +3,9 @@
 ### Junior Frontend Developer
 ***
 ### Contact information:
-* **Phone:** +79996032767
+* **Phone:** +79956592704
 * **E-mail:** budatsyrenova.dolgor@mail.ru
-* **Telegram:** @EllyKup
+* **Telegram:** @LilianaGrabde
 * **Discord:** #Null1824
 ***
 ### About myself:
