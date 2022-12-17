@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+                    <li class="nav-item"><a href="#language" class="nav-link">Language</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container main-container">
+            <section class="section" id="profile">
+                <div class="section-flex">
+                <div class="img">
+                    <img src="assets/nikki.jpg" alt="profile">
+                    </div>
+                </div>
+                <div class="section-flex">
+                <h1 class="section-profile-title">
+                    Dolgor Budatsyrenova
+                </h1>
+                <h3>JUNIOR FRONT-END DEVELOPER</h3>
+                </div>
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="section-title">Contacts</h2>
+                    <ul class="section-list section-signs">
+                        <li class="section-items">Irkutsk, Russia</li>
+                        <li class="section-items"><a href="mailto:budatsyrenova.dolgor@mail.ru" class="section-link"><span>Email: </span>budatsyrenova.dolgor@mail.ru</a></li>
+                        <li class="section-items"><a href="https://github.com/Grabden" class="section-link"><span>Github: </span>Grabden</a></li>
+                        <li class="section-items"><a href="https://t.me/LilianaGrabde" class="section-link"><span>Telegram: </span>@LilianaGrabde</a></li>
+                        <li class="section-items"><a href="https://discord.gg/zUr7wWYPXE" class="section-link"><span>Discord: </span>Null#1824</a></li>
+                    </ul>
+            </section>
+            <section class="section" id="summary">
+                <h2 class="section-title">About myself</h2>
+                <p>After graduating from university I realized that I need to learn a lot in order to master the initial skills of a front-end developer.
+                    I hope that in the future I can raise my diploma with pride and not with shame.</p>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills and Proficiency</h2>
+                <ul class="section-list">
+                    <li class="section-items">HTML5, CSS3</li>
+                    <li class="section-items">JavaScript Basics</li>
+                    <li class="section-items">Git, GitHub</li>
+                    <li class="section-items">Mathematics</li>
+                </ul>
+            </section>
+            <section class="section" id="code">
+                <h2 class="section-title">Code Example</h2>
+                <h3>Two to One</h3>
+                <p>Take 2 strings s1 and s2 including only letters from a to z. Return a new sorted string, the longest possible, containing distinct letters - each taken only once - coming from s1 or s2.</p>
+                <code>
+                    function longest(s1, s2) {<br>
+                        <span></span>var s=s1+s2,k=[];<br>
+                        <span></span>for(var i=0;i&lt;s.length;i++)<br>
+                        <span></span><span></span>k[i]=s[i];<br>
+                        <span></span>k=k.sort();<br>
+                        <span></span>s=k[0];<br>
+                        <span></span>for(var i=1;i&lt;k.length;i++){<br>
+                        <span></span><span></span>if(k[i]!=k[i-1])s=s+k[i];<br>
+                        <span></span>}<br>
+                        <span></span>return s;<br>
+                  }</code>
+            </section>
+            <section class="section" id="courses">
+                <h2 class="section-title">Courses</h2>
+                <ul class="section-list">
+                    <li class="section-items">RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
+                </ul>
+            </section>
+            <section class="section" id="language">
+                <h2 class="section-title">
+                    Languages
+                </h2>
+                <ul class="section-list">
+                    <li class="section-items"><span>English</span> - A2</li>
+                    <li class="section-items"><span>Russian</span> - native</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div>
+                ©2022
+                <a href="https://github.com/Grabden" class="footer-link">Grabden</a>
+            </div>
+            <a href="https://rs.school/js/" class="rsschool"></a>
+        </div>
+    </footer>
+</body>
+</html>
