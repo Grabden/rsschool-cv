@@ -1,0 +1,127 @@
+/*base*/
+html{
+    font-size:10px;
+    font-family:Verdana,sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    font-size:1.6rem;
+    min-height:100vh;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    background-color:azure;
+    line-height:24px;
+}
+.container{
+    max-width:1440px;
+    margin: 0 auto;
+}
+
+/*header*/
+header{
+    background-color:darksalmon;
+    height:100px;
+}
+.nav-list{
+    list-style:none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav-link,.footer-link{
+    padding: 0 20px;
+    line-height: 50px;
+    transition: .3s;
+    color:white;
+    text-decoration:none;
+}
+.nav-link:hover,.footer-link:hover{
+    color:red;
+}
+
+/*profile*/
+img{
+    width: 180px;
+    height: 180px;
+    border-radius:50%;
+    box-shadow:0 0 5px rgba(0,0,0,0.5);
+}
+.img{
+    text-align:center;
+    margin: 50px 0;
+}
+.section-profile-title,.section-title,h3 {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color:darksalmon;
+  }
+  .section-profile-title{
+    color:chocolate;
+    font-size:24px;
+  }
+  h3{
+    color:#aaa;
+    font-size: 16px;
+    font-weight: 600;
+  }
+/*main*/
+.main-container,#profile {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section,.section-flex {
+    box-sizing:border-box;
+    padding:20px;
+    width:50%;
+  }
+  .section:first-child{
+    width:100%;
+  }
+  .section-list{
+    list-style:"♡";
+  }
+  .section-items::marker{
+    color:darksalmon;
+  }
+  .section-link,.section-items{
+    color:chocolate;
+    text-decoration: none;
+  }
+  .section-items{
+    padding-left:10px;
+  }
+  .section-link:hover{
+    color:red;
+  }
+  code > span{
+    padding-left:20px;
+  }
+  li span{
+    color:#aaa;
+  }
+ 
+/*footer*/
+footer{
+    height:100px;
+    background-color: darksalmon;
+    color:white;
+    padding-top:30px;
+}
+.rsschool{
+  position:absolute;
+  right:50px;
+  background-image: url("assets/rs_school_js.svg");
+  width:90px;
+  height:35px;
+}
+/*media*/
+@media (max-width: 768px) {
+  .section,.section-flex {
+    width: 100%;
+  }
+}
